@@ -3,17 +3,13 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 
-import "src/Contract.sol";
+import "src/ContractV1.sol";
 
 contract TestContract is Test {
-    Contract c;
+    ContractV1 c;
 
     function setUp() public {
-        Args memory _args = Args({
-            admin: address(0x0),
-            init: address(0x0)
-        });
-        c = new Contract(_args);
+        c = new ContractV1(address(0x0), address(0x0));
     }
 
     function test_Bar_lessThan100_thenReturnFalse() public {
