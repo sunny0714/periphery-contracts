@@ -1,2 +1,6 @@
-[ci]
-fuzz-runs = 10_000
+[profile.default]
+src = 'src'
+test = 'test'
+out = 'out'
+libs = ['lib']
+solc_version = '0.8.16'

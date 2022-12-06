@@ -9,6 +9,7 @@
 Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
 
 Or, if your repo already exists, run:
+
 ```sh
 forge init
 forge build
@@ -37,3 +38,21 @@ contract ContractTest is Test {
 ## Development
 
 This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+
+## Deployment
+
+```solidity
+forge create src/Contract.sol:Contract --constructor-args "Arg1" "Arg2"
+```
+
+or
+
+```solidity
+forge create src/Contract.sol:Contract --constructor-args-path args
+```
+
+Example:
+
+```solidity
+forge create --rpc-url https://rpc.ankr.com/eth_goerli --private-key YOUR_PRIVATE_KEY src/Contract.sol:Contract --constructor-args-path args
+```

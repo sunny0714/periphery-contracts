@@ -9,7 +9,11 @@ contract TestContract is Test {
     Contract c;
 
     function setUp() public {
-        c = new Contract();
+        Args memory _args = Args({
+            admin: address(0x0),
+            init: address(0x0)
+        });
+        c = new Contract(_args);
     }
 
     function test_Bar_lessThan100_thenReturnFalse() public {
