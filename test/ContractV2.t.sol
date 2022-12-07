@@ -10,8 +10,7 @@ contract TestContract is Test {
 
     function setUp() public {
         Args memory _args = Args({
-            admin: address(0x0),
-            init: address(0x0)
+            admin: address(0x0)
         });
         c = new ContractV2(_args);
     }
