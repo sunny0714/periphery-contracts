@@ -6,6 +6,7 @@
 
 ```solidity
 forge create --rpc-url https://rpc.ankr.com/eth_goerli --private-key YOUR_PRIVATE_KEY src/ContractV1.sol:ContractV1 --constructor-args "0xAddress1" "0xAddress2"
+forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 src/ContractV1.sol:ContractV1 --constructor-args '0x9F79941335e54A11eCD13cedf58375657FdA97A1' '0x9F79941335e54A11eCD13cedf58375657FdA97A1'
 forge create --rpc-url https://rpc.ankr.com/eth_goerli --private-key YOUR_PRIVATE_KEY src/ContractV1.sol:ContractV1 --constructor-args-path contractV1-args
 ```
 
@@ -40,6 +41,7 @@ forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba
 ### ContractV6
 
 ```solidity
-forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 src/ContractV6.sol:ContractV6 --constructor-args '(0x9F79941335e54A11eCD13cedf58375657FdA97A1,0x9F79941335e54A11eCD13cedf58375657FdA97A1)' '[(0x9F79941335e54A11eCD13cedf58375657FdA97A1,1,[0xfbff3a41,0xc3ffb565,0xeec5e10a])','(0x9F79941335e54A11eCD13cedf58375657FdA97A1,1,[0xfbff3a41,0xc3ffb565,0xeec5e10a])]'
+forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 src/ContractV6.sol:ContractV6 --constructor-args '(0x9F79941335e54A11eCD13cedf58375657FdA97A1,0x9F79941335e54A11eCD13cedf58375657FdA97A1)' '[(0x9F79941335e54A11eCD13cedf58375657FdA97A1,1,[0xfbff3a41,0xc3ffb565,0xeec5e10a]),(0x9F79941335e54A11eCD13cedf58375657FdA97A1,1,[0xfbff3a41,0xc3ffb565,0xeec5e10a])]'
+
 forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 src/ContractV6.sol:ContractV6 --constructor-args-path ContractV6-args
 ```
